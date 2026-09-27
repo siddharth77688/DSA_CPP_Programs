@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int n; cout << "Enter the number of elements: "; cin >> n;
+    
     vector<int> b(n + 1);
-
+    cout << "Enter the elements: ";
     for (int i = 1; i <= n; i++) {
         cin >> b[i];
     }
@@ -43,7 +43,7 @@ int main() {
         answer = max(answer, l);
     }
 
-    cout << answer << endl;
+    cout << "The maximum sum is: " << answer << endl;
 
     return 0;
 }
